@@ -26,7 +26,7 @@ const page = async () => {
         Leaderboards 🏆
       </h1>
       <ol>
-        {users.map((user, index) => (
+        {users.map((user : User, index : number) => (
           <li
             key={user.id}
             className={`py-4 ${index < 3 ? "font-bold" : ""}`}
